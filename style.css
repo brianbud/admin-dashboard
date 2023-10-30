@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 header {
@@ -18,12 +18,12 @@ header {
 
 .projects {
   display: grid;
-  grid-column: 2/ 4;
   outline: 2px solid green;
 }
 
 .sidebar {
   display: grid;
+  grid-column: ;
   outline: 2px solid black;
 }
 
@@ -31,9 +31,18 @@ header {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-column: auto;
+  gap: 10px;
+  padding: 10px;
 }
 
 .card {
   outline: 1px solid red;
+  height: 250px;
 }
+
+/* .sidebar {
+  display: grid;
+  width: 20%;
+} */

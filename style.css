@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -7,11 +8,15 @@ body {
   background-color: #e2e8f0;
 }
 
+h2 {
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
 /* MAIN LAYOUT */
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 header {
@@ -19,6 +24,8 @@ header {
 }
 
 .menu {
+  font-size: 1.5rem;
+  font-weight: 700;
   display: grid;
   grid-row: 1 / 5;
 }
@@ -37,11 +44,11 @@ header {
 }
 
 .card {
-  height: 250px;
+  height: 230px;
 }
 
-.sidebar {
-  padding: 1rem;
+.card h2 {
+  padding: 0;
 }
 
 /* HEADER */
@@ -60,6 +67,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  align-items: center;
+}
+
+.profile-header div {
+  display: flex;
+  align-items: center;
 }
 
 .profile-header ul {
@@ -96,6 +109,10 @@ header {
   justify-content: space-between;
 }
 
+.card p {
+  font-weight: 400;
+}
+
 .card ul {
   display: flex;
   justify-content: end;
@@ -113,6 +130,7 @@ header {
   padding: 1rem 0.5rem;
   margin-right: 1rem;
   border-radius: 8px;
+  margin: 0.5rem 1rem;
 }
 
 .annoucement {
@@ -122,4 +140,23 @@ header {
 
 .annoucement:last-child {
   border-bottom: none;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.trending-item {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-pic {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

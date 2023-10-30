@@ -4,6 +4,7 @@ html {
 
 body {
   height: 100%;
+  background-color: #e2e8f0;
 }
 
 /* MAIN LAYOUT */
@@ -15,18 +16,15 @@ body {
 
 header {
   grid-column: 2 / 5;
-  outline: 2px solid red;
 }
 
 .menu {
   display: grid;
   grid-row: 1 / 5;
-  outline: 2px solid blue;
 }
 
 .projects {
   display: grid;
-  outline: 2px solid green;
 }
 
 /* PROJECT LAYOUT */
@@ -34,16 +32,63 @@ header {
 .projects {
   grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   grid-column: 1fr;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
 }
 
 .card {
-  outline: 1px solid red;
   height: 250px;
 }
 
 .sidebar {
-  outline: 2px solid blue;
   padding: 1rem;
+}
+
+/* HEADER */
+
+header {
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.profile-header ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+/* DASHBOARD */
+
+.menu {
+  background-color: #1992d4;
+  color: #fff;
+  height: 100vh;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+/* PROJECTS SECTION */
+.projects-container,
+.sidebar {
+  background-color: #e2e8f0;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-left: 10px solid #f0b429;
+  border-radius: 10px;
 }

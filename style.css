@@ -91,4 +91,35 @@ header {
   padding: 2rem;
   border-left: 10px solid #f0b429;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card ul {
+  display: flex;
+  justify-content: end;
+}
+
+.card ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+/* ANNOUNCEMENT SECTION */
+.announcements div,
+.trending {
+  background-color: #fff;
+  padding: 1rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.annoucement {
+  margin: 0 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.annoucement:last-child {
+  border-bottom: none;
 }

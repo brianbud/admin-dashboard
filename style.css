@@ -1,3 +1,39 @@
+/* MAIN LAYOUT */
+
 .container {
-  background-color: rgb(248, 190, 190);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+header {
+  grid-column: 2 / 5;
+  outline: 2px solid red;
+}
+
+.menu {
+  display: grid;
+  grid-row: 1 / 5;
+  outline: 2px solid blue;
+}
+
+.projects {
+  display: grid;
+  grid-column: 2/ 4;
+  outline: 2px solid green;
+}
+
+.sidebar {
+  display: grid;
+  outline: 2px solid black;
+}
+
+/* PROJECT LAYOUT */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+}
+
+.card {
+  outline: 1px solid red;
 }

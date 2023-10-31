@@ -92,6 +92,10 @@ header {
   padding: 1rem 1rem;
 }
 
+.nav div {
+  display: flex;
+}
+
 .profile-header {
   display: flex;
   justify-content: space-between;
@@ -125,6 +129,10 @@ header {
   background-color: #1992d4;
   color: #fff;
   height: 100vh;
+}
+
+.menu h2 {
+  text-align: center;
 }
 
 .menu ul {
@@ -190,6 +198,10 @@ header {
   flex-direction: column;
   gap: 10px;
   padding: 2rem;
+}
+
+.trending p:first-child {
+  font-weight: 500;
 }
 
 .trending-item {

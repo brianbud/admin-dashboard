@@ -32,6 +32,17 @@ input:active {
   gap: 10px;
   margin-right: 10rem;
 }
+
+img {
+  display: inline-block;
+  width: 2rem;
+}
+
+.menu img {
+  filter: invert(1);
+  filter: white;
+}
+
 /* MAIN LAYOUT */
 
 .container {

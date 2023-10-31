@@ -12,6 +12,26 @@ h2 {
   padding: 0 1rem;
   margin-top: 0.5rem;
 }
+
+input {
+  background-color: #e2e8f0;
+  border: none;
+  width: 800px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+.notification-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10rem;
+}
 /* MAIN LAYOUT */
 
 .container {
@@ -43,14 +63,6 @@ header {
   padding: 10px;
 }
 
-.card {
-  height: 230px;
-}
-
-.card h2 {
-  padding: 0;
-}
-
 /* HEADER */
 
 header {
@@ -60,6 +72,7 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 1rem;
 }
 
@@ -79,6 +92,15 @@ header {
   display: flex;
   gap: 1rem;
   list-style-type: none;
+  margin-right: 5rem;
+}
+
+.profile-header ul li {
+  background-color: #1992d4;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  font-weight: 700;
 }
 
 /* DASHBOARD */
@@ -107,10 +129,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 230px;
 }
 
 .card p {
   font-weight: 400;
+}
+
+.card h2 {
+  padding: 0;
 }
 
 .card ul {

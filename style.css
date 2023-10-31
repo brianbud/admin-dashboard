@@ -43,6 +43,11 @@ img {
   filter: white;
 }
 
+.menu li {
+  display: flex;
+  gap: 10px;
+}
+
 /* MAIN LAYOUT */
 
 .container {
